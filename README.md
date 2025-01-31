@@ -1,2 +1,2 @@
 # LinkGo
- A link checker written in Go.
+A link checker written in Go.
