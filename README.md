@@ -24,6 +24,26 @@ Here is an example of how to run the tool:
 linkgo -i input.csv -o output.jsonl -a false
 ```
 
+### Example
+
+Using the tool on the file provided in the example directory looks like this:
+```
+linkgo -i Links.csv -o Result.jsonl -a true
+```
+Where `Links.csv` looks like:
+```
+https://www.id.uscourts.gov/glossary.htm
+https://www.merriam-webster.com/dictionary/anthropogenic
+```
+Will produce `Result.jsonl` that looks like:
+```
+{"url":"https://www.id.uscourts.gov/glossary.htm","response_status_code":404,"response_status":"Not Found","time_of_validation":"2025-02-01T13:32:20Z"}
+
+{"url":"https://www.merriam-webster.com/dictionary/anthropogenic","response_status_code":200,"response_status":"OK","time_of_validation":"2025-02-01T13:32:20Z"}
+
+```
+
+
 ## TODO
 
 I have several features and basic functionality planned for development, including:
